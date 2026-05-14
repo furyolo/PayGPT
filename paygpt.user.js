@@ -655,10 +655,4 @@
   if (typeof GM_registerMenuCommand === 'function') {
     GM_registerMenuCommand('打开 PayGPT 面板', renderPanel);
   }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderPanel, { once: true });
-  } else {
-    renderPanel();
-  }
 })();
